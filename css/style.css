@@ -1,0 +1,802 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.gold {
+  color: #e2b024;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.header {
+  background-color: #000;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  height: 100%;
+  display: flex;
+  font-display: column;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  font-family: "Poppins", sans-serif;
+}
+.top__text {
+  color: #fff;
+  font-size: 12px;
+}
+.top__logo {
+  margin-right: 115px;
+  margin-left: 315px;
+}
+.top__nav {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.top__nav a {
+  margin-right: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+.top__nav ul {
+  display: flex;
+}
+.top__nav ul li {
+  margin-right: 35px;
+}
+.top__nav ul li:last-child {
+  margin-right: 0;
+}
+.top__nav ul li i {
+  font-size: 17px;
+  transition: all 1s;
+}
+.top__nav ul li i:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+.bottom {
+  margin-top: 15px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+.nav__item {
+  padding: 22px 0;
+  margin-left: 80px;
+  font-family: "Big Shoulders Stencil Text", cursive;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.nav__item:last-child,
+.nav__item:first-child {
+  margin-left: 0;
+}
+.nav__item_active {
+  color: #e2b024;
+  text-decoration: underline;
+}
+
+.content {
+  text-align: center;
+  margin-top: 190px;
+  font-family: "Big Shoulders Stencil Text", cursive;
+}
+.content__text {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.content__title {
+  font-size: 96px;
+  margin-bottom: 25px;
+}
+.content__subtitle {
+  margin-bottom: 35px;
+}
+.content__btn {
+  color: #e2b024;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.content__btn:hover {
+  cursor: pointer;
+}
+
+.subtitle {
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.info {
+  background-color: #18191a;
+  height: 100%;
+}
+.info__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 45px;
+}
+.info__name {
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 74px;
+  color: #e2b024;
+  margin-bottom: 12px;
+}
+.info__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.info__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 65px;
+}
+
+.btns {
+  display: flex;
+}
+.btns__item {
+  padding: 20px 45px;
+  transition: all 0.5s;
+}
+.btns__item:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.btns__item_bg-yellow {
+  background-color: #e2b024;
+  border: 1px solid #e2b024;
+  margin-right: 60px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+.btns__item_bg-black {
+  color: #fff;
+  border: 1px solid #e2b024;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 5;
+  background-color: #18191a;
+}
+
+.products {
+  background-color: #000;
+  height: 100%;
+  padding-top: 150px;
+}
+.products__body {
+  display: flex;
+  flex-direction: column;
+}
+.products__text {
+  text-align: center;
+}
+.products__title {
+  margin-bottom: 90px;
+}
+.products__nav {
+  margin-bottom: 90px;
+}
+.products__link {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-right: 70px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+.products__link:last-child {
+  margin-right: 0;
+}
+.products__link_active {
+  color: #e2b024;
+}
+
+.block-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+}
+.block-product img {
+  width: 160px;
+  height: 350px;
+}
+.block-product__item {
+  width: 25%;
+  margin-bottom: 95px;
+  text-align: center;
+}
+.block-product__name {
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.prices {
+  color: #e2b024;
+  font-family: "Poppins", sans-serif;
+}
+.prices__old {
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+.prices__new {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.products__btn {
+  text-align: center;
+  color: #e2b024;
+  text-decoration: underline;
+  margin-bottom: 170px;
+  font-size: 18px;
+  background-color: #000;
+}
+.products__btn:hover {
+  cursor: pointer;
+}
+
+.review {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/reviewer/bg.png);
+  height: 775px;
+}
+.review__title {
+  padding-top: 155px;
+  margin-bottom: 60px;
+}
+.review__avatar {
+  margin-bottom: 30px;
+}
+.review__name {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.review__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.review__btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+.review__btns .slide-btns__item {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 10px;
+  transition: all 0.5s;
+}
+.review__btns .slide-btns__item:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 0px;
+}
+.review__btns .slide-btns_active {
+  background-color: #e2b024;
+}
+
+.offer {
+  padding-top: 165px;
+  text-align: center;
+  background-color: #000;
+  height: 100%;
+  padding-bottom: 150px;
+}
+.offer__title {
+  margin-bottom: 90px;
+}
+.offer__wines {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: #fff;
+}
+.offer__wines__block img {
+  width: 370px;
+  height: 560px;
+}
+.offer__wines__block img:nth-child(2) {
+  height: 635px;
+  padding-bottom: 50px;
+}
+.offer__name {
+  position: absolute;
+  bottom: 150px;
+  left: 25px;
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.offer_price {
+  position: absolute;
+  bottom: 100px;
+  left: 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+.offer .price__block {
+  position: relative;
+}
+.offer__btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+.offer__btns .slide-btns__item {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 10px;
+  transition: all 0.5s;
+}
+.offer__btns .slide-btns__item:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 0px;
+}
+.offer__btns .slide-btns_active {
+  background-color: #e2b024;
+}
+
+.event {
+  background-color: #000;
+  height: 100%;
+  position: relative;
+  padding-bottom: 150px;
+}
+.event__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.event .left {
+  position: absolute;
+  top: 300px;
+  left: 240px;
+  transition: all 0.5s;
+}
+.event .left i {
+  padding: 20px 20px;
+  color: #e2b024;
+  border: 1px solid #e2b024;
+  border-radius: 50%;
+}
+.event .left:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.event .right {
+  position: absolute;
+  top: 300px;
+  right: 240px;
+  transition: all 0.5s;
+}
+.event .right i {
+  padding: 20px 20px;
+  color: #e2b024;
+  border: 1px solid #e2b024;
+  border-radius: 50%;
+}
+.event .right:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.block-info {
+  display: flex;
+  align-items: center;
+  width: 1170px;
+  background: #18191a;
+  height: 410px;
+}
+
+.block-info-left img {
+  width: 370px;
+  height: 410px;
+}
+
+.block-info-right {
+  color: #fff;
+  margin-left: 30px;
+}
+.block-info-right__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.block-info-right__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+.block-info-right__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+.block-info-right__btn {
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #e2b024;
+}
+.block-info-right__btn:hover {
+  cursor: pointer;
+}
+
+.contact {
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 150px;
+}
+.contact .contact__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.contact__left {
+  display: flex;
+  flex-direction: column;
+}
+.contact__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 37px;
+  letter-spacing: 0em;
+  margin-bottom: 75px;
+}
+.contact__links {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 31px;
+  margin-bottom: 60px;
+}
+.contact__links li {
+  margin-bottom: 40px;
+}
+.contact__links li:last-child {
+  margin-bottom: 0;
+}
+.contact__links a {
+  text-decoration: none;
+  color: white;
+}
+.contact__links i {
+  color: #e2b024;
+  margin-right: 30px;
+  width: 19px;
+  height: 19px;
+}
+.contact__social {
+  display: flex;
+}
+.contact__social li {
+  margin-right: 55px;
+}
+.contact__social li:last-child {
+  margin-right: 0;
+}
+.contact__social i {
+  font-size: 48px;
+  color: #e2b024;
+}
+.contact__right {
+  display: flex;
+  flex-direction: column;
+}
+.contact__right label {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+.contact__right input {
+  margin-bottom: 20px;
+}
+.contact__right #text,
+.contact__right #email,
+.contact__right #phone {
+  height: 64px;
+  width: 470px;
+  padding: 0px 15px;
+  font-size: 20px;
+  background-color: #000;
+  color: #e2b024;
+}
+.contact__right #message {
+  height: 135px;
+  background-color: #000;
+  padding: 0px 15px;
+  font-size: 20px;
+  color: #e2b024;
+  margin-bottom: 30px;
+}
+.contact__right .contact__btn {
+  height: 82px;
+  width: 200px;
+  background-color: #e2b024;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 62px;
+}
+
+.news {
+  height: 100%;
+  background-color: #18191a;
+}
+.news__title {
+  padding-top: 55px;
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.news__subtitle {
+  text-align: center;
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 70px;
+}
+.news .news__hero {
+  display: flex;
+  justify-content: center;
+}
+.news .news__hero input {
+  height: 64px;
+  width: calc(570px - 127px);
+  background-color: #000;
+  padding: 0 15px;
+  color: #e2b024;
+  font-size: 18px;
+}
+.news__btn {
+  height: 64px;
+  width: 127px;
+  background-color: #e2b024;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 65px;
+}
+
+.footer {
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+.footer__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 135px;
+  margin-bottom: 90px;
+}
+.footer__title {
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #e2b024;
+  margin-bottom: 40px;
+}
+.footer__list li {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.footer__list li:last-child {
+  margin-bottom: 0;
+}
+.footer__list li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.footer__social li {
+  margin-right: 45px;
+}
+.footer__social li:last-child {
+  margin-right: 0;
+}
+.footer__social li a {
+  color: #e2b024;
+}
+.footer__social li i {
+  font-size: 24px;
+}
+.footer__links li {
+  margin-bottom: 25px;
+}
+.footer__links li:last-child {
+  margin-bottom: 0;
+}
+.footer__links li i {
+  color: #e2b024;
+  margin-right: 15px;
+}
+.footer__links li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 27px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+.footer__bottom p {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 27px;
+  margin-bottom: 45px;
+}
+
+/* Cart */
+.cart {
+  display: none;
+  width: 20%;
+  height: 8070px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #18191a;
+}
+
+.close {
+  font-size: 35px;
+  color: #fff;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.cart__title {
+  font-size: 40px;
+  color: #e2b024;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  margin: 10px 0px;
+  padding-left: 20px;
+}
+
+.cart__blocks {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart__item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  margin: 0 10px;
+  padding: 15px 0px;
+  margin-bottom: 25px;
+}
+
+.cart__left-block {
+  width: 30%;
+  max-width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.cart__right-block {
+  width: 60%;
+}
+
+.cart__name {
+  font-size: 17px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.cart__price {
+  font-size: 18px;
+  color: #e2b024;
+  font-family: "Poppins", sans-serif;
+}
+
+.delete {
+  font-size: 20px;
+  color: #fff;
+  float: right;
+}
+
+.delete:hover {
+  cursor: pointer;
+}
